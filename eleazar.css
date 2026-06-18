@@ -10,6 +10,133 @@ body{
     padding:40px;
 }
 
+@media (min-width: 1200px){
+
+    .contenedor{
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .titulo a{
+        font-size: 22px;
+    }
+
+    .mio{
+        width: 280px;
+    }
+}
+
+
+@media (max-width: 1199px){
+
+    body{
+        padding: 20px;
+    }
+
+    .contenido{
+        flex-direction: column;
+    }
+
+    .mio{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+
+    .item{
+        margin-bottom: 0;
+    }
+
+    .titulo{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .titulo h2{
+        width: 100%;
+    }
+
+    .titulo a{
+        font-size: 18px;
+    }
+
+    table{
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 767px){
+
+    body{
+        padding: 10px;
+    }
+
+    .titulo{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .titulo i{
+        font-size: 30px;
+    }
+
+    .titulo h2{
+        font-size: 24px;
+    }
+
+    .titulo a{
+        font-size: 16px;
+        display: block;
+    }
+
+    .contenido{
+        flex-direction: column;
+    }
+
+    .mio{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item{
+        padding: 12px;
+    }
+
+    .item strong,
+    .item span{
+        font-size: 12px;
+    }
+
+    .tabla-contenedor{
+        overflow-x: auto;
+    }
+
+    table{
+        min-width: 700px;
+        font-size: 12px;
+    }
+
+    th,
+    td{
+        padding: 10px;
+    }
+
+    .acciones{
+        justify-content: center;
+    }
+
+    .button{
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
 .contenedor{
     background:white;
     border-radius:10px;
@@ -27,16 +154,23 @@ body{
     margin-bottom:20px;
 }
 
-.titulo i{
+.titulo a{
+    margin: 5px ;
+    text-decoration: none;
+    font-size: 28px;
+
+}
+
+.titulo i,a{
     font-size:40px;
     color:#2196f3;
 }
 
-.titulo h2{
+.titulo h2,a{
     font-size:36px;
 }
 
-.contenido{
+.contenido ,a{
     display:flex;
     gap:20px;
 }
