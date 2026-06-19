@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#d9d9d9;
+}
+
+header{
+    background:#7a6221;
+    height:90px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+    border-bottom:5px solid #d3aa17;
+}
+
+nav{
+    display:flex;
+    gap:200px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    font-style:italic;
+}
+button{
+    width: 350px;
+    height: 50px;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(161, 158, 158);
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 30px;
+}
+
+nav a:hover{
+    color:#f7d65c;
+}
+
+.galeria{
+    width:100%;
+    margin:60px auto;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:35px;
+    justify-items:center;
+}
+
+.libro{
+    text-align:center;
+}
+
+.libro img{
+    width:190px;
+    height:270px;
+    border-radius:20px;
+    object-fit:cover;
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.436);
+    transition:0.3s;
+}
+.barra-abajo{
+    height: 65px;
+    background: #7a6221;
+    border-top: 5px solid #f7d65c;
+}
+
+
+
+@media(min-width:390px){
+    nav{
+        display: flex;
+        gap: 500px;
+    }
+    nav a{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    font-style:italic;
+    }
+    .galeria{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+
+}
+
+@media(min-width:768px){
+    nav{
+        display: flex;
+        gap: 100px;
+    }
+    nav a{
+    text-decoration:none;
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+    font-style:italic;
+    }
+    .galeria{
+        grid-template-columns:repeat(3, 1fr) ;
+    }
+    .libro img:hover{
+    transform:scale(1.05);
+}
+
+}
+
+@media(min-width:1440px){
+    nav{
+        display: flex;
+        gap: 100px;
+    }
+    nav a{
+    text-decoration:none;
+    color:white;
+    font-size:65px;
+    font-weight:bold;
+    font-style:italic;
+    }
+    .galeria{
+        grid-template-columns:repeat(5, 1fr) ;
+    }
+    .libro img:hover{
+    transform:scale(1.05);
+}
+}
