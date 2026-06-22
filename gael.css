@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* estilos del header */
+.header{
+    width: 100%;
+    height: 5rem;
+    background-color:#5D4034;
+}
+
+a{
+    color: white;
+    align-items: center;
+    font-size: 160%;
+    text-decoration: none;
+}
+nav{
+     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 2rem;
+    background-color:#301b13;
+}
+
+body{
+    background-image: url(fondo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+div{
+    height: 110px;
+    width: 100px;
+    display: flex;
+}
+h1{
+margin-top: 10px;
+color: #cfc28d;
+font-size: 30px;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.titulo{
+    background-color: white;
+    margin: 100px 350px 20px;
+    height: 3%;
+    width: 40%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0,2);
+    align-items: center;
+}
+
+.titulo h2{
+    margin: 0;
+    color:#1b2a4c ;
+    font-weight: bold;
+    margin-left: 40%;
+}
+
+.Estadisticas{
+background: white;
+width: 70%;
+height:50%;
+margin: auto;
+flex-direction: column;
+display: flex;
+
+}
+
+.fila{
+    display:flex ;
+        justify-content: space-between;
+    align-items: center;
+        padding: 10px;
+        width: 95%;
+            font-weight: bold;
+    border-bottom: 1px solid #301b13;        
+    font-size: 30px;
+    
+}
+.numero{
+    margin-left: 400px;
+}
+ 
+.barrabaja-2{
+    margin-top: 6%;
+    background-color: #301b13;
+    width: 100%;
+    height: 75px;
+}
+
+.barra-30{
+    background-color:#cfc28d;
+    width: 100%;
+    height: 5px;
+}
+
+
+@media(max-width:1024px){
+    .Estadisticas{
+        width: 90%;
+    }
+    .fila{
+        font-size: 24px;
+    }
+}
+
+@media (max-width:768px){
+    .fila{
+        font-size: 18px;
+        padding: 10px;
+    }
+    .numero{
+        margin-left: 0;
+    }
+    .barrabaja-2{
+        height: 60px;
+    }
+    .barra-30{
+        height: 4px;
+    }
+    .Estadisticas{
+        width: 95%;
+    }
+    }
